@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ## Running the Simulation
 
 ### 0. Construction of Phase Diagram
-Go to 'src/Problem2.ipynb' to run the code that generates different figures needed for Ising model analysis.
+Go to ```src/Problem2.ipynb``` to run the code that generates different figures needed for Ising model analysis.
 
 ### 1. CPU Simulation (Optimized with Numba)
 To run a single simulation with parameter-based output naming:
@@ -38,7 +38,7 @@ python src/run_gpu.py --N 100 --niters 2000 --j 1.5 --nndiag --w_diag 1.0
 ```
 
 ### 3. Concentration Analysis (Parallel Processing)
-Scan magnetization $<m>$ vs concentration $x$ using multiple CPU cores:
+Scan magnetization $\left< m \right>$ vs concentration $x$ using multiple CPU cores:
 ```bash
 python src/analyze_x.py --N 40 --j 1.0 --niters 10000 --x_steps 11 --nprocs 8 --eq_start 0.5 --nndiag --w_diag 1.0
 ```
