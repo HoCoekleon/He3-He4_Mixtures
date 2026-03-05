@@ -1,0 +1,6 @@
+numpy
+matplotlib
+tqdm
+scipy
+numba
+cupy-cuda12x  # Or cupy-cuda11x depending on your CUDA version
